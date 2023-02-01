@@ -4,7 +4,11 @@ module.exports = {
   purge:['./src/**/*.{js,jsx,ts,tsx}'],
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'md' : '904px',
+      }
+    },
   },
   plugins: [],
 }
