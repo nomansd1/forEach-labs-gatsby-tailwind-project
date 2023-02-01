@@ -1,0 +1,29 @@
+{
+  "name": "my-gatsby-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "my-gatsby-site",
+  "author": "Subhan-Akram",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^5.5.0",
+    "gatsby-plugin-gatsby-cloud": "^5.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "gatsby-plugin-postcss": "^6.5.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4"
+  }
+}
