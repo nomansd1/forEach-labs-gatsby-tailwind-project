@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { logo, logo2, lightMode, carretLight, carretDark, carretOrange, ai, vr, fairyTale, fairyTale2, teamWork } from "../images/index";
+import { logo, logo2, lightMode, carretLight, carretDark, carretOrange, ai, vr, fairyTale, fairyTale2, teamWork, aiLight, vrLight } from "../images/index";
 
 function Header() {
   const [darkmodeToggler, setDarkmodeToggler] = useState(false);
@@ -86,7 +86,7 @@ function Header() {
                     aria-labelledby="dropdownLargeButton"
                   >
                     <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-white dark:hover:text-white rounded-md">
-                      <img src={ai} className='w-5 h-5' />
+                      <img src={darkmodeToggler? aiLight : ai} className='w-5 h-5' />
                       <a
                         href="#"
                         className="px-2"
@@ -94,7 +94,7 @@ function Header() {
                       >
                     </li>
                     <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-white dark:hover:text-white rounded-md">
-                      <img src={ai} className='w-5 h-5' />
+                      <img src={darkmodeToggler? vrLight : vr} className='w-5 h-5' />
                       <a
                         href="#"
                         className="px-2"
@@ -102,7 +102,7 @@ function Header() {
                       >
                     </li>
                     <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-white dark:hover:text-white rounded-md">
-                      <img src={ai} className='w-5 h-5' />
+                      <img src={darkmodeToggler? aiLight : ai} className='w-5 h-5' />
                       <a
                         href="#"
                         className="px-2"
@@ -110,7 +110,7 @@ function Header() {
                       >
                     </li>
                     <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-white dark:hover:text-white rounded-md">
-                      <img src={ai} className='w-5 h-5' />
+                      <img src={darkmodeToggler? vrLight : vr} className='w-5 h-5' />
                       <a
                         href="#"
                         className="px-2"
@@ -159,7 +159,7 @@ function Header() {
                     aria-labelledby="dropdownLargeButton"
                   >
                     <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-white dark:hover:text-white rounded-md">
-                      <img src={fairyTale} className='w-5 h-5' />
+                      <img src={darkmodeToggler? aiLight : fairyTale} className='w-5 h-5' />
                       <a
                         href="#"
                         className="px-2"
@@ -167,7 +167,7 @@ function Header() {
                       >
                     </li>
                     <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-white dark:hover:text-white rounded-md">
-                      <img src={teamWork} className='w-5 h-5' />
+                      <img src={darkmodeToggler? aiLight : teamWork} className='w-5 h-5' />
                       <a
                         href="#"
                         className="px-2"
@@ -175,7 +175,7 @@ function Header() {
                       >
                     </li>
                     <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-white dark:hover:text-white rounded-md">
-                      <img src={fairyTale2} className='w-5 h-5' />
+                      <img src={darkmodeToggler? aiLight : fairyTale2} className='w-5 h-5' />
                       <a
                         href="#"
                         className="px-2"
@@ -183,7 +183,7 @@ function Header() {
                       >
                     </li>
                     <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-white dark:hover:text-white rounded-md">
-                      <img src={teamWork} className='w-5 h-5' />
+                      <img src={darkmodeToggler? aiLight : teamWork} className='w-5 h-5' />
                       <a
                         href="#"
                         className="px-2"

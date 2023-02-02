@@ -7,7 +7,7 @@ function Contact() {
             <section className="bg-white dark:bg-[#281717] ">
                 <div className="gap-32 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                     <div className={`font-light text-[#281717] sm:text-lg`}>
-                        <h2 className="mb-14 text-4xl tracking-tight font-bold text-[#281717] dark:text-white">Contact Us</h2>
+                        <h2 className="mb-14 mt-3 text-4xl tracking-tight font-bold text-[#281717] dark:text-white">Contact Us</h2>
                         <div className='flex flex-col'>
                             <div className='flex items-center'>
                                 <input type="text" placeholder='Email' className='ring-4 ring-[#f35544] p-3 rounded-xl mx-2 pl-10 w-[70%]' />
@@ -22,7 +22,7 @@ function Contact() {
                             Read More
                         </button>
                     </div>
-                    <div className="grid gap-4 mt-14">
+                    <div className="grid gap-4">
                         <h2 className="text-4xl tracking-tight font-bold text-[#281717] dark:text-white">What is lorem ipsum</h2>
                         <p className='text-[#989898] dark:text-[#C9C9C9] font-medium'>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick.</p>
                         <img className="w-full h-[200px] rounded-lg" src={rec} />
