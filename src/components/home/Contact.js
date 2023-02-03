@@ -1,19 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { rec } from '../../images'
 
 function Contact() {
+    const [darkmodeToggler, setDarkmodeToggler] = useState(false);
+
     return (
-        <div>
+        <div className={`${darkmodeToggler && "dark"}`}>
             <section className="bg-white dark:bg-[#281717] ">
                 <div className="gap-32 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                     <div className={`font-light text-[#281717] sm:text-lg`}>
                         <h2 className="mb-14 mt-3 text-4xl tracking-tight font-bold text-[#281717] dark:text-white">Contact Us</h2>
                         <div className='flex flex-col'>
                             <div className='flex items-center'>
-                                <input type="text" placeholder='Email' className='ring-4 ring-[#f35544] p-3 rounded-xl mx-2 pl-10 w-[70%]' />
-                                <input type="text" placeholder='Name' className='ring-4 ring-[#f35544] p-3 rounded-xl mx-2 pl-10 w-[30%]' />
+                                <input type="text" placeholder='Email' className='ring-4 font-medium ring-[#f35544] p-3 rounded-xl mx-2 pl-10 w-[70%] dark:text-white dark:bg-transparent' />
+                                <input type="text" placeholder='Name' className='ring-4 font-medium ring-[#f35544] p-3 rounded-xl mx-2 pl-10 w-[30%]dark:text-white dark:bg-transparent' />
                             </div>
-                            <textarea className='resize-none mt-10 ml-2 ring-4 ring-[#f35544] p-3 rounded-xl pl-10' placeholder='Message'></textarea>
+                            <textarea className='resize-none mt-10 ml-2 font-medium ring-4 ring-[#f35544] p-3 rounded-xl pl-10 dark:text-white dark:bg-transparent' placeholder='Message'></textarea>
                         </div>
                         <button
                             type="button"

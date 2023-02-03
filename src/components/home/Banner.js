@@ -1,12 +1,9 @@
-import React, { useContext, useState } from 'react'
+import React, { useState } from 'react'
 import { company1, company2, hero } from '../../images'
 import Slider from 'react-slick';
-import UserContext from '../../context/context';
-
 
 function Banner() {
-    const [darkmodeToggler, setDarkmodeToggler] = useContext(UserContext);
-
+    const [darkmodeToggler, setDarkmodeToggler] = useState(false);
     const settings = {
         infinite: true,
         speed: 500,

@@ -28,7 +28,7 @@ function Reviews() {
                 <div className='w-[80%] md:w-[55%] mt-10 mx-auto flex items-center'>
                     <Slider {...settings} className='w-[100%] px-3 md:px-10 flex items-center justify-center testi_slider'>
                         <div className='testi_slide '>
-                            <div class="flex flex-col items-center bg-white border border-gray-200 rounded-3xl shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:bg-[#281717] md:px-10 px-5 md:py-5 py-2.5">
+                            <div class="flex flex-col items-center bg-white rounded-3xl shadow md:flex-row md:max-w-xl dark:bg-[#281717] md:px-10 px-5 md:py-5 py-2.5">
                                 <div className='flex items-center justify-center p-1 bg-[#f35544] rounded-full'>
                                     <img className="object-cover sm:w-[250px] md:h-auto md:w-[500px] border-[5px] border-white dark:border-[#281717] rounded-full" src={testimo} alt="" />
                                 </div>

@@ -1,9 +1,8 @@
-import React, { useContext, useState } from "react";
-import UserContext from "../context/context";
+import React, { useState } from "react";
 import { logo, logo2, lightMode, carretLight, carretDark, carretOrange, ai, vr, fairyTale, fairyTale2, teamWork, aiLight, vrLight, darkMode } from "../images/index";
 
 function Header() {
-  const [darkmodeToggler, setDarkmodeToggler] = useContext(UserContext);
+  const [darkmodeToggler, setDarkmodeToggler] = useState(false);
   const [mobileToggle, setMobileToggle] = useState(false);
   const [servDropdownOpen, setServDropdownOpen] = useState(false);
   const [abtDropdownOpen, setAbtDropdownOpen] = useState(false);
@@ -65,7 +64,7 @@ function Header() {
             className={`items-center justify-between transition ease-in-out duration-300 w-full md:flex md:w-auto md:order-1 ${mobileToggle ? "block" : "hidden"} `}
             id="navbar-sticky"
           >
-            <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-[#261c1c] md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-[#261c1c] dark:md:bg-[#281717]">
               <li className="relative">
                 <button
                   className="py-2 pl-3 pr-4 text-[#1E1E1E] rounded hover:text-[#F25544] md:p-0 dark:text-white dark:hover:text-[#F25544] flex items-center"
@@ -90,33 +89,37 @@ function Header() {
                       <img src={darkmodeToggler? aiLight : ai} className='w-5 h-5' />
                       <a
                         href="#"
-                        className="px-2"
-                      >Ai & Machine Learning</a
-                      >
+                        className="px-2 flex flex-col"
+                      >Ai & Machine Learning
+                      <span className="text-xs">The Future is here now.</span>
+                      </a>
                     </li>
                     <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#f35544] dark:text-white dark:hover:text-white rounded-md">
                       <img src={darkmodeToggler? vrLight : vr} className='w-5 h-5' />
                       <a
                         href="#"
-                        className="px-2"
-                      >Metaverse development</a
-                      >
+                        className="px-2 flex flex-col"
+                      >Metaverse development
+                        <span className="text-xs">Beyond the universe.</span>
+                      </a>
                     </li>
                     <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#f35544] dark:text-white dark:hover:text-white rounded-md">
                       <img src={darkmodeToggler? aiLight : ai} className='w-5 h-5' />
                       <a
                         href="#"
-                        className="px-2"
-                      >Ai & Machine Learning</a
-                      >
+                        className="px-2 flex flex-col"
+                      >Ai & Machine Learning
+                      <span className="text-xs">The Future is here now.</span>
+                      </a>
                     </li>
                     <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#f35544] dark:text-white dark:hover:text-white rounded-md">
                       <img src={darkmodeToggler? vrLight : vr} className='w-5 h-5' />
                       <a
                         href="#"
-                        className="px-2"
-                      >Metaverse development</a
-                      >
+                        className="px-2 flex flex-col"
+                      >Metaverse development
+                      <span className="text-xs">Beyond the universe.</span>
+                      </a>
                     </li>
                   </ul>
                 </div>

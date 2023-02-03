@@ -13,12 +13,9 @@ import Portfolio from "../components/home/Portfolio";
 import Reviews from "../components/home/Reviews";
 import Contact from "../components/home/Contact";
 import Footer from "../components/Footer";
-import UserContext from "../context/context";
 
 function Index() {
-  const [darkmodeToggler, setDarkmodeToggler] = useState(false);
   return (
-    <UserContext.Provider value={[darkmodeToggler, setDarkmodeToggler]}>
       <div>
         <Header />
         <Banner />
@@ -30,7 +27,6 @@ function Index() {
         <Contact />
         <Footer />
       </div>
-    </UserContext.Provider>
   );
 }
 

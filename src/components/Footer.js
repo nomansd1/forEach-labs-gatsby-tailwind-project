@@ -1,15 +1,13 @@
-import React, { useContext, useState } from "react";
-import UserContext from "../context/context";
+import React, { useState } from "react";
 import { footerLogo } from "../images";
 
 function Footer() {
-  const [darkmodeToggler, setDarkmodeToggler] = useContext(UserContext);
-
+  const [darkmodeToggler, setDarkmodeToggler] = useState(false);
   return (
     <div className={`${darkmodeToggler && "dark"}`}>
       <footer className="py-12 bg-[#f35544] xl:pt-24 text-white">
         <div className="w-full px-4 mx-auto max-w-8xl">
-          <div className="grid gap-12 xl:grid-cols-6 xl:gap-24">
+          <div className="grid gap-12 xl:grid-cols-6 xl:gap-10">
             <div className="col-span-3">
               <a href="" className="flex">
                 <img src={footerLogo} className="md:h-[100px] -mt-6 -ml-5" alt="" />
@@ -27,7 +25,7 @@ function Footer() {
               </button>
             </div>
             <div>
-              <h3 className="mb-6 text-lg font-bold">Help and support</h3>
+              <h3 className="mb-6 text-lg font-bold">Services</h3>
               <ul>
                 <li className="mb-4">
                   <a
@@ -35,31 +33,64 @@ function Footer() {
                     rel="noreferrer nofollow"
                     className="font-normal hover:underline"
                   >
-                    Contact us
+                    AI and Machine Learning
+                  </a>
+                </li>
+                <li className="mb-4">
+                  <a
+                    href=""
+                    rel="noreferrer nofollow"
+                    className="font-normal hover:underline"
+                  >
+                    Web Development
                   </a>
                 </li>
                 <li className="mb-4">
                   <a href="" className="font-normal hover:underline">
-                    Github discussions
+                    Metaverse Development
+                  </a>
+                </li>
+                <li className="mb-4">
+                  <a href="" className="font-normal hover:underline">
+                    Mobile Development
+                  </a>
+                </li>
+                <li className="mb-4">
+                  <a href="" className="font-normal hover:underline">
+                    App Development
+                  </a>
+                </li>
+                <li className="mb-4">
+                  <a href="" className="font-normal hover:underline">
+                    Web Development
                   </a>
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="col-span-1">
               <h3 className="mb-6 text-lg font-bold">Follow us</h3>
               <ul>
+              <li className="mb-4">
+                  <a
+                    href=""
+                    rel="noreferrer nofollow"
+                    className="font-normal hover:underline"
+                  >
+                    Our Story
+                  </a>
+                </li>
                 <li className="mb-4">
                   <a
                     href=""
                     rel="noreferrer nofollow"
                     className="font-normal hover:underline"
                   >
-                    Discord
+                    Team
                   </a>
                 </li>
                 <li className="mb-4">
                   <a href="" className="font-normal hover:underline">
-                    Github
+                    Jobs
                   </a>
                 </li>
                 <li className="mb-4">
@@ -68,32 +99,27 @@ function Footer() {
                     rel="noreferrer nofollow"
                     className="font-normal hover:underline"
                   >
-                    Twitter
+                    Clients
                   </a>
                 </li>
               </ul>
             </div>
-            <div>
-              <h3 className="mb-6 text-lg font-bold">Legal</h3>
+            <div className="col-span-1">
+              <h3 className="mb-6 text-lg font-bold">Legal Pages</h3>
               <ul>
                 <li className="mb-4">
                   <a href="" className="font-normal hover:underline">
-                    License (EULA)
+                    Cookie Policy
                   </a>
                 </li>
                 <li className="mb-4">
                   <a href="" className="font-normal hover:underline">
-                    Privacy Policy
+                  Privacy Policy
                   </a>
                 </li>
                 <li className="mb-4">
                   <a href="" className="font-normal hover:underline">
-                    Terms &amp; Conditions
-                  </a>
-                </li>
-                <li className="mb-4">
-                  <a href="" className="font-normal hover:underline">
-                    Brand guideline
+                  Legal Notice
                   </a>
                 </li>
               </ul>
