@@ -14,7 +14,7 @@ function Footer() {
               </a>
               <p className="max-w-lg mb-3 font-medium">
                 Foreach Labs is a library of interactive UI components built with
-                Tailwind CSS that can get you started building websites faster
+                Tailwind DSS that can get you started building websites faster
                 and more efficiently.
               </p>
               <button
