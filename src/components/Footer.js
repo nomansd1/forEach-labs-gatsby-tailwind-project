@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { footerLogo } from "../images";
+import { footerLogo, ora } from "../images";
 
 function Footer() {
   const [darkmodeToggler, setDarkmodeToggler] = useState(false);
@@ -19,9 +19,10 @@ function Footer() {
               </p>
               <button
                 type="button"
-                className="bg-white md:mt-10 text-[#F25544] hover:bg-[] focus:ring-4 focus:outline-none focus:ring-white font-medium rounded-lg text-sm px-3 py-1.5 md:px-10 md:py-3.5 text-center mr-1 md:mr-0"
+                className="bg-white flex items-center md:mt-10 text-[#F25544] hover:bg-[] focus:ring-4 focus:outline-none focus:ring-white font-medium rounded-lg text-sm px-3 py-1.5 md:px-10 md:py-3.5 text-center mr-1 md:mr-0"
               >
                 Contact Us
+                <img src={ora} className='ml-3 w-6 h-auto' />
               </button>
             </div>
             <div>

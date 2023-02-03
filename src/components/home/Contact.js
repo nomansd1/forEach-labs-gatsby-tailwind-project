@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { rec } from '../../images'
+import { rec, wra2 } from '../../images'
 
 function Contact() {
     const [darkmodeToggler, setDarkmodeToggler] = useState(false);
@@ -19,9 +19,10 @@ function Contact() {
                         </div>
                         <button
                             type="button"
-                            className="text-white mt-14 bg-[#F25544] hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-[#F25544] font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:text-white"
+                            className="text-white flex items-center mt-14 bg-[#F25544] hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-[#F25544] font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:text-white"
                         >
                             Send
+                        <img src={wra2} className='ml-3 w-6 h-auto' />
                         </button>
                     </div>
                     <div className="grid gap-4 mt-5 md:mt-0">

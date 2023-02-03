@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { ora } from '../../images';
 
 function BottomHero() {
     const [darkmodeToggler, setDarkmodeToggler] = useState(false);
@@ -10,9 +11,10 @@ function BottomHero() {
                     <p className='mt-2 font-medium text-center'>Dive into the digital world and feel the timeless experience.</p>
                     <button
                         type="button"
-                        className="bg-white mt-5 text-[#F25544] hover:bg-[#C9C9C9] focus:ring-4 focus:outline-none focus:ring-[#C9C9C9] font-medium rounded-lg text-sm px-14 py-2.5 text-center mr-3 md:mr-0"
+                        className="bg-white mt-5 flex items-center text-[#F25544] hover:bg-[#C9C9C9] focus:ring-4 focus:outline-none focus:ring-[#C9C9C9] font-medium rounded-lg text-sm px-14 py-2.5 text-center mr-3 md:mr-0"
                     >
                         Discover More
+                        <img src={ora} className='ml-3 w-6 h-auto' />
                     </button>
                 </div>
             </div>

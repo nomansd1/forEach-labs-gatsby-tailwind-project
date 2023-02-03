@@ -30,5 +30,7 @@ export { default as aiLight } from '../images/ailight.png';
 export { default as vrLight } from '../images/vrlight.png';
 export { default as darkMode } from '../images/darkMode.png';
 export { default as footerLogo } from '../images/footerlogo.png';
+export { default as wra2 } from '../images/wra2.png';
+export { default as ora } from '../images/ora.png';
 
 
