@@ -19,10 +19,10 @@ function Contact() {
                             type="button"
                             className="text-white mt-14 bg-[#F25544] hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-[#F25544] font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:text-white"
                         >
-                            Read More
+                            Send
                         </button>
                     </div>
-                    <div className="grid gap-4">
+                    <div className="grid gap-4 mt-5 md:mt-0">
                         <h2 className="text-4xl tracking-tight font-bold text-[#281717] dark:text-white">What is lorem ipsum</h2>
                         <p className='text-[#989898] dark:text-[#C9C9C9] font-medium'>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick.</p>
                         <img className="w-full h-[200px] rounded-lg" src={rec} />

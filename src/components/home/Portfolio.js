@@ -42,7 +42,7 @@ function Portfolio() {
                     </div>
                     <div className='flex flex-col items-center py-2 justify-center'>
                         <h1 className='text-4xl font-bold text-center dark:text-white'>Our Partners About Us</h1>
-                        <p className='dark:text-white mt-3 w-[60%] font-medium text-center'>lorem ipsum dolor imit ipsum dolor imit ipsum dolor imit ipsum dolor imit ipsum dolor imit ipsum dolor imit ipsum dolor imit ipsum dolor imit</p>
+                        <p className='dark:text-white mt-3 w-[90%] md:w-[60%] font-medium text-center'>lorem ipsum dolor imit ipsum dolor imit ipsum dolor imit ipsum dolor imit ipsum dolor imit ipsum dolor imit ipsum dolor imit ipsum dolor imit</p>
                     </div>
                 </div>
             </section>

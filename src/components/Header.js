@@ -1,8 +1,9 @@
-import React, { useState } from "react";
-import { logo, logo2, lightMode, carretLight, carretDark, carretOrange, ai, vr, fairyTale, fairyTale2, teamWork, aiLight, vrLight } from "../images/index";
+import React, { useContext, useState } from "react";
+import UserContext from "../context/context";
+import { logo, logo2, lightMode, carretLight, carretDark, carretOrange, ai, vr, fairyTale, fairyTale2, teamWork, aiLight, vrLight, darkMode } from "../images/index";
 
 function Header() {
-  const [darkmodeToggler, setDarkmodeToggler] = useState(false);
+  const [darkmodeToggler, setDarkmodeToggler] = useContext(UserContext);
   const [mobileToggle, setMobileToggle] = useState(false);
   const [servDropdownOpen, setServDropdownOpen] = useState(false);
   const [abtDropdownOpen, setAbtDropdownOpen] = useState(false);
@@ -17,28 +18,28 @@ function Header() {
           <a href="#" className="flex overflow-hidden h-14 items-center">
             <img
               src={darkmodeToggler? logo2 : logo}
-              className="h-28 mr-3 mt-6 sm:h-28"
+              className="h-24 mr-0  md:mr-3 mt-6 md:h-28"
               alt="for each labs logo"
             />
           </a>
           <div className="flex md:order-2 items-center">
-            <button type="button" className="h-6 w-6 mr-6">
+            <button type="button" className="h-5 w-5 md:h-6 md:w-6  mr-3 md:mr-6">
               <img
-                src={lightMode}
+                src={darkmodeToggler? darkMode: lightMode}
                 alt="Light Mode"
                 onClick={() => setDarkmodeToggler(!darkmodeToggler)}
               />
             </button>
             <button
               type="button"
-              className="text-white bg-[#F25544] hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-[#F25544] font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:text-[#1E1E1E]"
+              className="text-white bg-[#F25544] hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-[#F25544] font-medium rounded-lg text-sm px-3 py-1.5 md:px-5 md:py-2.5 text-center mr-1 md:mr-0 dark:text-white"
             >
               Contact Us
             </button>
             <button
               data-collapse-toggle="#navbar-sticky"
               type="button"
-              className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center p-1 md:p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-white dark:hover:bg-[#f35544] dark:focus:ring-[#5f4747]"
               aria-controls="#navbar-sticky"
               aria-expanded="false"
               data-collapse="#navbar-sticky"
@@ -64,7 +65,7 @@ function Header() {
             className={`items-center justify-between transition ease-in-out duration-300 w-full md:flex md:w-auto md:order-1 ${mobileToggle ? "block" : "hidden"} `}
             id="navbar-sticky"
           >
-            <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-[#261c1c] md:dark:bg-gray-900 dark:border-gray-700">
               <li className="relative">
                 <button
                   className="py-2 pl-3 pr-4 text-[#1E1E1E] rounded hover:text-[#F25544] md:p-0 dark:text-white dark:hover:text-[#F25544] flex items-center"
@@ -85,7 +86,7 @@ function Header() {
                     className="py-2 px-2 text-sm text-gray-700 dark:text-gray-400"
                     aria-labelledby="dropdownLargeButton"
                   >
-                    <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-white dark:hover:text-white rounded-md">
+                    <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#f35544] dark:text-white dark:hover:text-white rounded-md">
                       <img src={darkmodeToggler? aiLight : ai} className='w-5 h-5' />
                       <a
                         href="#"
@@ -93,7 +94,7 @@ function Header() {
                       >Ai & Machine Learning</a
                       >
                     </li>
-                    <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-white dark:hover:text-white rounded-md">
+                    <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#f35544] dark:text-white dark:hover:text-white rounded-md">
                       <img src={darkmodeToggler? vrLight : vr} className='w-5 h-5' />
                       <a
                         href="#"
@@ -101,7 +102,7 @@ function Header() {
                       >Metaverse development</a
                       >
                     </li>
-                    <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-white dark:hover:text-white rounded-md">
+                    <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#f35544] dark:text-white dark:hover:text-white rounded-md">
                       <img src={darkmodeToggler? aiLight : ai} className='w-5 h-5' />
                       <a
                         href="#"
@@ -109,7 +110,7 @@ function Header() {
                       >Ai & Machine Learning</a
                       >
                     </li>
-                    <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-white dark:hover:text-white rounded-md">
+                    <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#f35544] dark:text-white dark:hover:text-white rounded-md">
                       <img src={darkmodeToggler? vrLight : vr} className='w-5 h-5' />
                       <a
                         href="#"
@@ -158,7 +159,7 @@ function Header() {
                     className="py-2 px-2 text-sm text-gray-700 dark:text-gray-400"
                     aria-labelledby="dropdownLargeButton"
                   >
-                    <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-white dark:hover:text-white rounded-md">
+                    <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#f35544] dark:text-white dark:hover:text-white rounded-md">
                       <img src={darkmodeToggler? aiLight : fairyTale} className='w-5 h-5' />
                       <a
                         href="#"
@@ -166,7 +167,7 @@ function Header() {
                       >Our Story</a
                       >
                     </li>
-                    <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-white dark:hover:text-white rounded-md">
+                    <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#f35544] dark:text-white dark:hover:text-white rounded-md">
                       <img src={darkmodeToggler? aiLight : teamWork} className='w-5 h-5' />
                       <a
                         href="#"
@@ -174,7 +175,7 @@ function Header() {
                       >Team</a
                       >
                     </li>
-                    <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-white dark:hover:text-white rounded-md">
+                    <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#f35544] dark:text-white dark:hover:text-white rounded-md">
                       <img src={darkmodeToggler? aiLight : fairyTale2} className='w-5 h-5' />
                       <a
                         href="#"
@@ -182,7 +183,7 @@ function Header() {
                       >Jobs</a
                       >
                     </li>
-                    <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-white dark:hover:text-white rounded-md">
+                    <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#f35544] dark:text-white dark:hover:text-white rounded-md">
                       <img src={darkmodeToggler? aiLight : teamWork} className='w-5 h-5' />
                       <a
                         href="#"

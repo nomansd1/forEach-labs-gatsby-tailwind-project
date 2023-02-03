@@ -28,6 +28,7 @@ export { default as logo2 } from '../images/brandlogolight.png';
 export { default as rec } from '../images/rectangle.png';
 export { default as aiLight } from '../images/ailight.png';
 export { default as vrLight } from '../images/vrlight.png';
-
+export { default as darkMode } from '../images/darkMode.png';
+export { default as footerLogo } from '../images/footerlogo.png';
 
 

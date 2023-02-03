@@ -12,10 +12,12 @@ function Services() {
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
-      { breakpoint: 855, settings: { slidesToShow: 1 } },
-      { breakpoint: 900, settings: { slidesToShow: 2 } },
-      { breakpoint: 1220, settings: { slidesToShow: 2 } },
+      { breakpoint: 855, settings: { slidesToShow: 1, } },
+      { breakpoint: 900, settings: { slidesToShow: 2, } },
+      { breakpoint: 1220, settings: { slidesToShow: 2, } },
     ],
+    autoplay: true
+
   };
   return (
     <div className={`${darkmodeToggler && "dark"}`}>

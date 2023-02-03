@@ -1,21 +1,25 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { company1, company2, hero } from '../../images'
 import Slider from 'react-slick';
+import UserContext from '../../context/context';
 
 
 function Banner() {
+    const [darkmodeToggler, setDarkmodeToggler] = useContext(UserContext);
 
-    const [darkmodeToggler, setDarkmodeToggler] = useState(false);
     const settings = {
         infinite: true,
         speed: 500,
         slidesToShow: 8,
-        slidesToScroll: 1,responsive: [
+        slidesToScroll: 1,
+        responsive: [
             {breakpoint: 500, settings: {slidesToShow: 2}},
             {breakpoint: 700, settings: {slidesToShow: 4}},
             {breakpoint: 900, settings: {slidesToShow: 6}},
             {breakpoint: 1200, settings: {slidesToShow: 8}},
         ],
+        autoplay: true
+
     };
     return (
         <div className={`${darkmodeToggler && "dark"}`}>
