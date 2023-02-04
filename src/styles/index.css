@@ -65,3 +65,9 @@
 .port_slider .slick-slide {
     margin: 0 10px;
 }
+.story_banner{
+    background: url(../images/partnergrid.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
