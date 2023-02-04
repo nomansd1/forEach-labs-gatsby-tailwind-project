@@ -36,5 +36,6 @@ export { default as company1l } from '../images/company1l.png';
 export { default as company2l } from '../images/company2l.png';
 export { default as view360 } from '../images/360.png';
 export { default as whyTile } from '../images/whytile.png';
+export { default as helpBanner } from '../images/helpbanner.png';
 
 
