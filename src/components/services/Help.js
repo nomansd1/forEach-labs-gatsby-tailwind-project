@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Slider from 'react-slick';
 import { company1l, company2l, view360 } from '../../images';
 
-
 function Help() {
     const [darkmodeToggler, setDarkmodeToggler] = useState(false);
     const settings = {
