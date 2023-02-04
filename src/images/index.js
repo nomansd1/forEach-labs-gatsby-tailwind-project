@@ -32,5 +32,8 @@ export { default as darkMode } from '../images/darkMode.png';
 export { default as footerLogo } from '../images/footerlogo.png';
 export { default as wra2 } from '../images/wra2.png';
 export { default as ora } from '../images/ora.png';
+export { default as company1l } from '../images/company1l.png';
+export { default as company2l } from '../images/company2l.png';
+export { default as view360 } from '../images/360.png';
 
 
