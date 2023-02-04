@@ -31,7 +31,7 @@ function Header() {
             </button>
             <button
               type="button"
-              className="text-white bg-[#F25544] hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-[#F25544] font-medium rounded-lg text-sm px-3 py-1.5 md:px-5 md:py-2.5 text-center mr-1 md:mr-0 dark:text-white"
+              className="text-white bg-[#F25544] hidden sm:block hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-[#F25544] font-medium rounded-lg text-sm px-3 py-1.5 md:px-5 md:py-2.5 text-center mr-1 md:mr-0 dark:text-white"
             >
               Contact Us
             </button>
