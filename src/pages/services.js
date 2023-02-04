@@ -7,6 +7,7 @@ import WorkGrid from '../components/home/WorkGrid'
 import Help from '../components/services/Help'
 import {Portfolio, Contact} from '../components/home/index'
 import Footer from '../components/Footer'
+import WhyUs from '../components/services/WhyUs'
 
 function services() {
   return (
@@ -18,6 +19,7 @@ function services() {
       />
       <WorkGrid />
       <Help />
+      <WhyUs/>
       <Portfolio />
       <Contact/>
       <Footer/>
