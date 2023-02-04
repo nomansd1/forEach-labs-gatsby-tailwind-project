@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
 }
-.slide, .serv_slide, .testi_slide {
+.slide, .serv_slide, .testi_slide, .port_slide {
     display: flex !important;
     align-items: center;
     justify-content: center;
@@ -61,4 +61,7 @@
     .hero {
         background-position-x: bottom center;
     }
+}
+.port_slider .slick-slide {
+    margin: 0 10px;
 }

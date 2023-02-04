@@ -17,7 +17,6 @@ function Services() {
       { breakpoint: 1220, settings: { slidesToShow: 2, } },
     ],
     autoplay: true
-
   };
   return (
     <div className={`${darkmodeToggler && "dark"}`}>
