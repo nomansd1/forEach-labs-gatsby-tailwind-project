@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { whyTile } from '../../images';
 
+
 function WhyUs() {
     const [darkmodeToggler, setDarkmodeToggler] = useState(false);
   return (
