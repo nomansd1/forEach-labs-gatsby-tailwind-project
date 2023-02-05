@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState,useContext } from 'react'
 import { company1, company2 } from '../../images'
-
+import {StateContext} from "../../context-store/ContextProvider"
 function Clients() {
-  const [darkmodeToggler, setDarkmodeToggler] = useState(true);
+    const {darkmodeToggler } = useContext(StateContext);
   return (
     <div className={`${darkmodeToggler && "dark"}`}>
       <div className='py-16 dark:bg-[#281717]'>

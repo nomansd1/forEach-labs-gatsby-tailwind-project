@@ -16,6 +16,7 @@ function services() {
       <Hero/>
       <WorkGrid 
         order="order-last"
+        // darkmodeToggler={darkmodeToggler}
       />
       <WorkGrid />
       <Help />

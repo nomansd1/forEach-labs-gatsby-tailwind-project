@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState ,useContext} from 'react'
 import { ora } from '../../images';
-
+import {StateContext} from "../../context-store/ContextProvider"
 function Hero() {
-    const [darkmodeToggler, setDarkmodeToggler] = useState(false);
-
+   
+    const {darkmodeToggler } = useContext(StateContext);
     return (
         <div className={`${darkmodeToggler && "dark"} mt-14`}>
             <div className='hero flex items-center justify-center'>

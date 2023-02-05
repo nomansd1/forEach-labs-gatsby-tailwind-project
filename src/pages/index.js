@@ -9,17 +9,20 @@ import Footer from "../components/Footer";
 import {Banner, Services, Work, BottomHero, Portfolio, Reviews, Contact} from '../components/home/index'
 
 function Index() {
+
+ 
+
   return (
       <div>
-        <Header />
-        <Banner />
+        <Header  />
+        <Banner  />
         <Services />
-        <Work />
-        <BottomHero />
-        <Portfolio />
-        <Reviews />
+        <Work   />
+        <BottomHero  />
+        <Portfolio  />
+        <Reviews  />
         <Contact />
-        <Footer />
+        <Footer  />
       </div>
   );
 }

@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState ,useContext} from 'react'
 import WorkGrid from './WorkGrid';
-
+import {StateContext} from "../../context-store/ContextProvider"
 function Work() {
 
-  const [darkmodeToggler, setDarkmodeToggler] = useState(false);
+    const {darkmodeToggler } = useContext(StateContext);
 
 
   return (

@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState,useContext } from 'react'
 import { helpBanner, wra2 } from '../../images'
-
+import {StateContext} from "../../context-store/ContextProvider"
 function Banner() {
-  const [darkmodeToggler, setDarkmodeToggler] = useState(false);
+  const {darkmodeToggler } = useContext(StateContext);
   return (
     <div className={`${darkmodeToggler && "dark"}`}>
       <section class="bg-white dark:bg-[#281717] pt-16 md:pt-0">

@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useContext} from 'react'
 import Slider from 'react-slick';
 import { company1l, company2l, view360 } from '../../images';
-
+import {StateContext} from "../../context-store/ContextProvider"
 function Help() {
-    const [darkmodeToggler, setDarkmodeToggler] = useState(false);
+    const {darkmodeToggler } = useContext(StateContext);
     const settings = {
         infinite: true,
         speed: 500,

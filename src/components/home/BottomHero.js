@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState ,useContext} from 'react'
 import { ora } from '../../images';
-
+import {StateContext} from "../../context-store/ContextProvider"
 function BottomHero() {
-    const [darkmodeToggler, setDarkmodeToggler] = useState(false);
+    const {darkmodeToggler } = useContext(StateContext);
     return (
         <div className={`${darkmodeToggler && "dark"}`}>
             <div className='bottom_hero py-20 h-96 flex items-center justify-center bg-white dark:bg-[#281717] '>

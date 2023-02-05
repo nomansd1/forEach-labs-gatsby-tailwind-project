@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState,useContext } from 'react'
 import Slider from 'react-slick';
 import { port1, port2, port3, port4, port5, port6 } from '../../images';
-
+import {StateContext} from "../../context-store/ContextProvider"
 function Portfolio() {
-
-    const [darkmodeToggler, setDarkmodeToggler] = useState(false);
+    const {darkmodeToggler } = useContext(StateContext);
+   
     const settings = {
         infinite: true,
         speed: 500,

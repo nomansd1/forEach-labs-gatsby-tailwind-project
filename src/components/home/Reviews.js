@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState ,useContext} from 'react'
 import Slider from 'react-slick';
 import { company2, testimo } from '../../images';
-
+import {StateContext} from "../../context-store/ContextProvider"
 function Reviews() {
-
-    const [darkmodeToggler, setDarkmodeToggler] = useState(false);
+    const {darkmodeToggler } = useContext(StateContext);
+ 
     const settings = {
         infinite: true,
         speed: 500,

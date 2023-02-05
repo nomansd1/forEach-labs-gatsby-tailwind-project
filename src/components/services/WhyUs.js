@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState,useContext} from 'react'
 import { whyTile } from '../../images';
 
-
+import {StateContext} from "../../context-store/ContextProvider"
 function WhyUs() {
-    const [darkmodeToggler, setDarkmodeToggler] = useState(false);
+  const {darkmodeToggler } = useContext(StateContext);
   return (
     <div className={`${darkmodeToggler && "dark"}`}>
       <div className='dark:bg-[#281717] dark:text-white py-14' >
