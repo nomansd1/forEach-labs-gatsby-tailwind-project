@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { StateContext } from "../context-store/ContextProvider";
 import { footerLogo, ora } from "../images";
 
 function Footer() {
-  const [darkmodeToggler, setDarkmodeToggler] = useState(false);
+  const {darkmodeToggler } = useContext(StateContext);
+  
   return (
     <div className={`${darkmodeToggler && "dark"}`}>
       <footer className="py-12 bg-[#f35544] xl:pt-24 text-white">

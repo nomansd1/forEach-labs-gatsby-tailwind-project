@@ -1,10 +1,13 @@
-import React from 'react'
+import { Link } from 'gatsby'
+import React, { useContext } from 'react'
+import { StateContext } from '../../context-store/ContextProvider';
 import { rec, wra2 } from '../../images'
 
 function Stories() {
+    const {darkmodeToggler } = useContext(StateContext);
     return (
-        <div>
-            <div className='py-16'>
+        <div className={`${darkmodeToggler && "dark"}`}>
+            <div className='py-16 dark:bg-[#281717]'>
                 <h1 className='text-4xl font-bold text-center dark:text-white'>Who we help?</h1>
                 <div className='md:w-[80%] px-5 mx-auto my-10 sm:grid md:grid-col-2 xl:grid-cols-3 2xl:flex flex-wrap justify-center'>
                     <div className="max-w-xs rounded-lg shadow dark:bg-[#281717] bg-white m-3">
@@ -99,13 +102,13 @@ function Stories() {
                     </div>
                 </div>
                 <div className='flex justify-center items-center'>
-                <button
-                    type="button"
+                <Link
+                    to="/casestudypage"
                     className="text-white flex items-center mt-5 bg-[#F25544] hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-[#F25544] font-medium rounded-lg text-sm px-5 py-2.5 text-center md:mr-0 dark:text-white"
                 >
                     See All Customer Cases
                     <img src={wra2} className='ml-3 w-6 h-auto' />
-                </button>
+                </Link>
                 </div>
             </div>
         </div>

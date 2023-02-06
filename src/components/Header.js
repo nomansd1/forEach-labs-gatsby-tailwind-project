@@ -136,13 +136,13 @@ function Header() {
                 </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/casestudy"
                   className="block py-2 pl-3 pr-4 text-[#1E1E1E] rounded hover:text-[#F25544] md:p-0 dark:text-white dark:hover:text-[#F25544]"
                   aria-current="page"
                 >
                   Case Study
-                </a>
+                </Link>
               </li>
               <li className="relative">
                 <button
@@ -166,10 +166,10 @@ function Header() {
                   >
                     <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#f35544] dark:text-white dark:hover:text-white rounded-md">
                       <img src={darkmodeToggler? aiLight : fairyTale} className='w-5 h-5' />
-                      <a
-                        href="#"
+                      <Link
+                        to="/story"
                         className="px-2"
-                      >Our Story</a
+                      >Our Story</Link
                       >
                     </li>
                     <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#f35544] dark:text-white dark:hover:text-white rounded-md">
