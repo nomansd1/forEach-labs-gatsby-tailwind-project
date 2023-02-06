@@ -8,7 +8,6 @@ function Header() {
   const [mobileToggle, setMobileToggle] = useState(false);
   const [servDropdownOpen, setServDropdownOpen] = useState(false);
   const [abtDropdownOpen, setAbtDropdownOpen] = useState(false);
-  
 
   return (
     <div className={`${darkmodeToggler && "dark"}`}>

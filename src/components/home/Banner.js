@@ -21,7 +21,7 @@ function Banner() {
     return (
         <div className={`${darkmodeToggler && "dark"}`}>
             <section class="bg-white dark:bg-[#281717]">
-                <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-20 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-12 md:py-20 sm:py-20 xs:py-20">
+                <div class="grid max-w-screen-xl px-4 py-16 mx-auto lg:gap-8 xl:gap-0 lg:py-20 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-12 md:py-20 sm:py-20 xs:py-20">
                     <div class="mr-auto place-self-center lg:col-span-7 md:col-span-6 sm:col-span-12">
                         <h1 class="max-w-2xl mb-4 text-4xl dark:text-white font-bold tracking-tight leading-none md:text-5xl">Hi, we are <br /> Foreach Labs </h1>
                         <p class="max-w-sm mb-6 font-bold text-gray-500 lg:mb-8 md:text-lg lg:text-sm dark:text-gray-400">WE SAIL THE DIGITAL SEA AND CRAFT NEW DIGITAL
