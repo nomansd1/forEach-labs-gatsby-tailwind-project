@@ -7,16 +7,15 @@ export const StateContext = createContext();
 const ThemeModeStateProvider = ({ children }) => {
     // localStorage.setItem("themeMode",false)
     let getItem=localStorage.getItem("themeMode")
-    if(getItem==null){
-        getItem=false;
+    if(getItem == true){
+        getItem = false;
     }
-  const [darkmodeToggler, setDarkmodeToggler] = useState(getItem);
+  const [darkmodeToggler, setDarkmodeToggler] = useState(!getItem);
   useEffect(()=>{
 
     localStorage.setItem("themeMode",darkmodeToggler)
     return (
-        ()=>{
-          
+        ()=>{         
             localStorage.removeItem("themeMode")}
     )
   },[darkmodeToggler])

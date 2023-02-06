@@ -4,7 +4,6 @@ import {StateContext} from "../context-store/ContextProvider"
 import { Link } from "gatsby";
 function Header() {
   const {darkmodeToggler, setDarkmodeToggler } = useContext(StateContext);
-  console.log("darkmode ",darkmodeToggler)
   const [mobileToggle, setMobileToggle] = useState(false);
   const [servDropdownOpen, setServDropdownOpen] = useState(false);
   const [abtDropdownOpen, setAbtDropdownOpen] = useState(false);
@@ -15,7 +14,7 @@ function Header() {
         className={`bg-white px-2 sm:px-4 py-2.5 dark:bg-[#281717] fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-[#281717]`}
       >
         <div className="lg:container flex flex-wrap items-center justify-between mx-auto">
-          <Link to="/" href="#" className="flex overflow-hidden h-14 items-center">
+          <Link to="/" className="flex overflow-hidden h-14 items-center">
             <img
               src={darkmodeToggler? logo2 : logo}
               className="h-24 mr-0  md:mr-3 mt-6 md:h-28"
@@ -30,8 +29,7 @@ function Header() {
                 onClick={() => setDarkmodeToggler(!darkmodeToggler)}
               />
             </button>
-            <Link 
-              type="button"
+            <Link
               className="text-white bg-[#F25544] hidden sm:block hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-[#F25544] font-medium rounded-lg text-sm px-3 py-1.5 md:px-5 md:py-2.5 text-center mr-1 md:mr-0 dark:text-white"
             >
               Contact Us
@@ -76,7 +74,7 @@ function Header() {
                 >
                   Services
                   {/* <img className="w-2 h-1 ml-2 mt-1 hover:text-[#F25544]" src={darkmodeToggler? carretDark : carretLight}/> */}
-                  <svg className="w-5 h-3 ml-1 mt-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                  <svg className="w-5 h-3 ml-1 mt-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 </Link >
                 <div
                   id="dropdownNavbar"
@@ -127,9 +125,7 @@ function Header() {
               </li>
               <li>
                 <Link to="/help"
-                  href="#"
                   className="block py-2 pl-3 pr-4 text-[#1E1E1E] rounded hover:text-[#F25544] md:p-0 dark:text-white dark:hover:text-[#F25544]"
-                  aria-current="page"
                 >
                   Who we help
                 </Link>
@@ -138,7 +134,6 @@ function Header() {
                 <Link
                   to="/casestudy"
                   className="block py-2 pl-3 pr-4 text-[#1E1E1E] rounded hover:text-[#F25544] md:p-0 dark:text-white dark:hover:text-[#F25544]"
-                  aria-current="page"
                 >
                   Case Study
                 </Link>
@@ -146,14 +141,13 @@ function Header() {
               <li className="relative">
                 <button
                   className="py-2 pl-3 pr-4 text-[#1E1E1E] rounded hover:text-[#F25544] md:p-0 dark:text-white dark:hover:text-[#F25544] flex items-center"
-                  aria-current="page"
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="#dropdownNavbar"
                   onClick={() => setAbtDropdownOpen(!abtDropdownOpen)}
                 >
                   About Us
                   {/* <img className="w-2 h-1 ml-2 mt-1 hover:text-[#F25544]" src={darkmodeToggler? carretDark : carretLight}/> */}
-                  <svg className="w-5 h-3 ml-1 mt-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                  <svg className="w-5 h-3 ml-1 mt-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 </button>
                 <div
                   id="dropdownNavbar"
@@ -161,7 +155,6 @@ function Header() {
                 >
                   <ul
                     className="py-2 px-2 text-sm text-gray-700 dark:text-gray-400"
-                    aria-labelledby="dropdownLargeButton"
                   >
                     <li className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#f35544] dark:text-white dark:hover:text-white rounded-md">
                       <img src={darkmodeToggler? aiLight : fairyTale} className='w-5 h-5' />
@@ -202,7 +195,6 @@ function Header() {
                 <a
                   href="#"
                   className="block py-2 pl-3 pr-4 text-[#1E1E1E] rounded hover:text-[#F25544] md:p-0 dark:text-white dark:hover:text-[#F25544]"
-                  aria-current="page"
                 >
                   News
                 </a>
