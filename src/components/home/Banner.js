@@ -2,6 +2,7 @@ import React, { useState,useContext } from 'react'
 import { company1, company2, hero, wra, wra2 } from '../../images'
 import Slider from 'react-slick';
 import {StateContext} from "../../context-store/ContextProvider"
+
 function Banner() {
     const {darkmodeToggler } = useContext(StateContext);
     const settings = {
