@@ -3,7 +3,7 @@ import { logo, logo2, lightMode, carretLight, carretDark, carretOrange, ai, vr, 
 import {StateContext} from "../context-store/ContextProvider"
 import { Link } from "gatsby";
 function Header() {
-  const {darkmodeToggler} = useContext(StateContext);
+  const {darkmodeToggler, setDarkmodeToggler } = useContext(StateContext);
   const [mobileToggle, setMobileToggle] = useState(false);
   const [servDropdownOpen, setServDropdownOpen] = useState(false);
   const [abtDropdownOpen, setAbtDropdownOpen] = useState(false);
