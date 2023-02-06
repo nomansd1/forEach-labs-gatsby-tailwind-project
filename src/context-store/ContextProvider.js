@@ -1,7 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react';
 
 // Create a context object
-export const StateContext = createContext();
+export const StateContext = createContext(false);
 
 // Wrap your component tree in a provider component
 const ThemeModeStateProvider = ({ children }) => {
